@@ -1,0 +1,29 @@
+<header class="main-header"
+	<% if(theme.banner.bgimg){ %> 
+	style="background-image:url(<%= url_for(theme.banner.bgimg) %>)" 
+	<% } else { %>
+	style="background-image:url('/img/bannerbg.jpg')" 
+	<% } %> >
+	
+	<div class="main-header-box">
+		<a class="header-avatar" href="/" title='<%= config.author %>'>
+            <% if(theme.banner.arimg){ %> 
+			<%- image_tag(theme.banner.arimg,{alt:'logo',class:'img-responsive center-block'}) %>
+			<% } else { %> 
+            <%- image_tag('img/avatar.jpg',{alt:'logo',class:'img-responsive center-block'}) %>
+			<% } %>
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">人生在勤，不索何获</h2>-->
+			<% if(theme.branding.context){ %>
+                <h2> <%= theme.branding.context %> </h2>
+            <% } else { %>
+				<% if(theme.branding.img){ %>
+					<%- image_tag(theme.branding.img,{alt:'博客主题',class:'img-responsive center-block'}) %>
+				<% } else { %>
+					<%- image_tag('img/branding.png',{alt:'博客主题',class:'img-responsive center-block'}) %>
+				<% } %>
+			<% } %>
+    	</div>
+    </div>
+</header>
