@@ -1,8 +1,8 @@
-# hexo-theme-snippet
+# hexo-theme-brief
 
-Snippet 简洁而不简单，也许是一款你寻找已久hexo主题。
+breif 简洁而不简单，也许是一款你寻找已久hexo主题。
 
-如果本主题也是你喜欢的菜，请动动手指 [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers) 支持一下
+如果本主题也是你喜欢的菜，请动动手指 [Star](https://github.com/Dragocytus/hexo-theme-brief/stargazers) 支持一下
 
 [![Build Status](https://www.travis-ci.org/shenliyang/hexo-theme-snippet.svg?branch=master)](https://www.travis-ci.org/shenliyang/hexo-theme-snippet)
 [![Read the Docs](https://img.shields.io/readthedocs/pip/stable.svg)](https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md)
@@ -15,9 +15,8 @@ Snippet 简洁而不简单，也许是一款你寻找已久hexo主题。
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shenliyang/hexo-theme-snippet/blob/master/LICENSE)
 
 
-[主题Demo戳这里](http://shenliyang.github.io?rf=gh-demo)
+[主题Demo戳这里](http://)
 
-![hexo-theme-snippet](http://snippet.shenliyang.com/img/snippet-screenshots1000.jpg "Snippet主题")
 
 
 ## 主题特点
@@ -46,8 +45,8 @@ Snippet 简洁而不简单，也许是一款你寻找已久hexo主题。
 
 > 如果你在此之前使用的是 `Hexo 2.x` 版本，为了避免未知的错误，请备份好数据，或者建立新的博客目录
 
->"主题目录" => `themes\hexo-theme-snippet`, "Hexo根目录" => 项目主目录;
-"主题配置" => `themes\hexo-theme-snippet\_config.yml`, "Hexo配置" => 项目主目录下`_config.yml`
+>"主题目录" => `themes\hexo-theme-brief`, "Hexo根目录" => 项目主目录;
+"主题配置" => `themes\hexo-theme-brief\_config.yml`, "Hexo配置" => 项目主目录下`_config.yml`
 
 ### 1. 环境搭建
 
@@ -58,11 +57,11 @@ Snippet 简洁而不简单，也许是一款你寻找已久hexo主题。
 
 有两种方式获取本主题--下载 `*.zip` 文件和通过 `git`方式：
 
-1. 下载 [Snippet主题](https://github.com/shenliyang/hexo-theme-snippet) 文件解压后放在 `themes` 目录下，和博客中的landscape为同级目录
+1. 下载 [brief主题](https://github.com/Dragocytus/hexo-theme-brief) 文件解压后放在 `themes` 目录下，和博客中的landscape为同级目录
 
 2. Git方式，在Hexo根目录执行：
 ``` bash
-git clone git://github.com/shenliyang/hexo-theme-snippet.git themes/hexo-theme-snippet
+git clone git://github.com/Dragocytus/hexo-theme-brief.git themes/hexo-theme-brief
 ```
 
 ### 3. 安装主题插件
@@ -86,7 +85,7 @@ npm i   //安装项目依赖
 
 2. 在Hexo根目录下创建一个名为 gulpfile.js 的文件：
 ``` bash
-require('./themes/hexo-theme-snippet/gulpfile');
+require('./themes/hexo-theme-breif/gulpfile');
 ```
 
 3. 运行 gulp：
@@ -114,7 +113,7 @@ hexo d 或者 gulp deploy  //部署发布
 主题可能会不定时优化和更新，更新主题代码：
 
 ``` bash
-cd themes/hexo-theme-snippet
+cd themes/hexo-theme-brief
 git pull
 ```
 
@@ -165,8 +164,8 @@ jsonContent:
 ## notification config --网站公告设置,支持 html 和 纯文本
 notification: |-
             <p>主题已经上线！欢迎下载或更新~ <br/>
-            主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank" img-src="">Snippet主题</a> <br/>
-            <hr/>接受贡献，包括不限于提交问题与需求，修复代码。欢迎Pull Request<br/>支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a></p>
+            主题下载：<a href="https://github.com/Dragocytus/hexo-theme-brief" title="fork me" target="_blank" img-src="">Snippet主题</a> <br/>
+            <hr/>接受贡献，包括不限于提交问题与需求，修复代码。欢迎Pull Request<br/>支持主题：<a href="https://github.com/Dragocytus/hexo-theme-brief/stargazers">Star一下</a></p>
 
 ## 社交设置{@name:社交工具名字，@icon:社交工具图标，@href:设置工具链接} [参考图标](http://fontawesome.io/icons/)
 social:
