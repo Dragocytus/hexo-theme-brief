@@ -45,8 +45,8 @@ breif 简洁而不简单，也许是一款你寻找已久hexo主题。
 
 > 如果你在此之前使用的是 `Hexo 2.x` 版本，为了避免未知的错误，请备份好数据，或者建立新的博客目录
 
->"主题目录" => `themes\hexo-theme-brief`, "Hexo根目录" => 项目主目录;
-"主题配置" => `themes\hexo-theme-brief\_config.yml`, "Hexo配置" => 项目主目录下`_config.yml`
+>"主题目录" => `themes\brief`, "Hexo根目录" => 项目主目录;
+"主题配置" => `themes\brief\_config.yml`, "Hexo配置" => 项目主目录下`_config.yml`
 
 ### 1. 环境搭建
 
@@ -61,12 +61,12 @@ breif 简洁而不简单，也许是一款你寻找已久hexo主题。
 
 2. Git方式，在Hexo根目录执行：
 ``` bash
-git clone git://github.com/Dragocytus/hexo-theme-brief.git themes/hexo-theme-brief
+git clone git://github.com/Dragocytus/hexo-theme-brief.git themes/brief
 ```
 
 ### 3. 安装主题插件
 
-因为 **hexo-theme-snippet** 使用了 `ejs` 模版引擎 、 `Less` CSS预编译语言以及在官方插件的基础上
+因为 **hexo-theme-brief** 使用了 `ejs` 模版引擎 、 `Less` CSS预编译语言以及在官方插件的基础上
 进行功能的开发，以下为必装插件：
 
 ``` bash
@@ -85,7 +85,7 @@ npm i   //安装项目依赖
 
 2. 在Hexo根目录下创建一个名为 gulpfile.js 的文件：
 ``` bash
-require('./themes/hexo-theme-breif/gulpfile');
+require('./themes/breif/gulpfile');
 ```
 
 3. 运行 gulp：
@@ -133,7 +133,7 @@ menu:
 favicon: /favicon.ico
 
 ## rss --rss文件位置{@rss}
-rss: /atom.xml
+rss: /rss.xml
 
 
 # 各个小工具的设置
@@ -153,7 +153,7 @@ widgets:
 ## 搜索
 jsonContent:
   searchLocal: true // 是否启用本地搜索
-  searchGoogle: true //是否启用谷歌搜索
+  searchGoogle: false //是否启用谷歌搜索
   posts:
     title: true
     text: true
@@ -164,7 +164,7 @@ jsonContent:
 ## notification config --网站公告设置,支持 html 和 纯文本
 notification: |-
             <p>主题已经上线！欢迎下载或更新~ <br/>
-            主题下载：<a href="https://github.com/Dragocytus/hexo-theme-brief" title="fork me" target="_blank" img-src="">Snippet主题</a> <br/>
+            主题下载：<a href="https://github.com/Dragocytus/hexo-theme-brief" title="fork me" target="_blank" img-src="">Brief主题</a> <br/>
             <hr/>接受贡献，包括不限于提交问题与需求，修复代码。欢迎Pull Request<br/>支持主题：<a href="https://github.com/Dragocytus/hexo-theme-brief/stargazers">Star一下</a></p>
 
 ## 社交设置{@name:社交工具名字，@icon:社交工具图标，@href:设置工具链接} [参考图标](http://fontawesome.io/icons/)
@@ -205,14 +205,17 @@ links:
 
 # 主题自定义个性化配置
 
-## 网站宣传语{@branding：网站宣传语(不设置显示本地图片)}
-branding: 从未如此简单有趣
+## 网站宣传语{@branding：网站宣传语(不设置显示本地图片)，文字跟图片任选一种}
+branding: 
+	img: 
+	context: 
 
 ## 设置banner背景图片{@img:自定义图片地址(支持绝对和相对路径),主题默认{"静态背景":"banner.jpg"},{"动态背景":"banner2.jpg"},{"动态星空背景":"banner3.jpg"}}
-## 例如：http://snippet.shenliyang.com/img/banner|2|3.jpg, 或者 './img/banner-img.jpg'(相对本地资源地址)
+## 例如：http://git.com/img/banner|2|3.jpg, 或者 './img/banner-img.jpg'(相对本地资源地址)
+arimg 为头像图片地址
 banner:
-  img: http://snippet.shenliyang.com/img/banner.jpg
-
+  bgimg: /img/banner.jpg
+  arimg: 
 
 ## 设置carousel{@img:图片地址,@url:点击跳转链接(默认值:"javascript:")}
 carousel:
