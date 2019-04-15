@@ -10,8 +10,8 @@ menu:
 - page: 服务器
   url: /categories/服务器/
   icon:
-- page: 后端
-  url: /categories/后端/
+- page: 网站搭建
+  url: /categories/网站搭建/
   icon:
 - page: 杂谈
   url: /categories/杂谈/
@@ -24,7 +24,7 @@ menu:
 favicon: /favicon.ico
 
 ## Feed
-rss: /atom.xml
+rss: /rss.xml
 
 ## Carousel
 carousel:
@@ -59,19 +59,19 @@ jsonContent:
 ## 网站公告设置
 notification: |-
             <p>
-                主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
-                主题使用：<a href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> <br/>
-                支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a>
+                主题下载：<a href="https://github.com/Dragocytus/hexo-theme-brief" title="fork me" target="_blank">Brief主题</a> <br/>
+                主题使用：<a href="https://github.com/Dragocytus/hexo-theme-brief/blob/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> <br/>
+                支持主题：<a href="https://github.com/Dragocytus/hexo-theme-brief/stargazers">Star一下</a>
             </p>
 
 ## 社交设置
 social:
  - name: Github
    icon: git
-   href: //github.com/shenliyang
+   href: //github.com/Dragocytus
  - name: 邮箱
    icon: envelope-o
-   href: mailto:snippet@91h5.cc
+   href: mailto:
  - name: 联系QQ
    icon: qq
    href: /
@@ -83,7 +83,7 @@ social:
    href: /
  - name: RSS
    icon: feed
-   href: /atom.xml
+   href: /rss.xml
 
 ## 文章分类设置
 cate_config:
@@ -170,7 +170,7 @@ reward:
 
 ## Valine评论
 valine:
-   enable: true
+   enable: false
    appId: KrSmq6LpzCITW3vSUuMH5svq-gzGzoHsz	
    appKey: WMV2F31uxRVjIhtsfNXBlzeQ
    placeholder: ヾﾉ≧∀≦)o 来呀！吐槽一番吧！
@@ -249,6 +249,6 @@ baidu_site_verification:
 baidu_push: false
 
 #网站主题配置
-since: 2019
+since: 2019-2022
 robot: 'all' ### 控制搜索引擎的抓取和索引编制行为，默认为all
 version: 1.1.1
